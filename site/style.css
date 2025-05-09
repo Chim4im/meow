@@ -1,0 +1,417 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+body {
+    font-family: 'VT323', monospace;
+    padding: 0;
+    margin: 0;
+    background-attachment: fixed;
+
+}
+
+
+.socials-container {
+  display: flex;
+  justify-content: center; /* Центрирование по горизонтали */
+  gap: 150px;
+  padding: 50px 0;
+}
+
+.contacticon {
+  font-size: 150px; /* Базовый размер */
+  color: #111;
+  transition: transform 0.5s ease, color 0.3s ease;
+  cursor: pointer;
+}
+
+.contacticon:hover {
+  transform: scale(1.3); /* Увеличение на 30% */
+  color: #666; /* Можешь заменить на фирменные цвета соцсетей */
+}
+
+
+.video-bg {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+}
+.video-bg video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -100;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+.effects {
+    position: fixed;
+    text-align: center;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.video-bg__content {
+    z-index: 2;
+    color: #ffffff;
+    font-size: 40px;
+}
+.main {
+    max-width: 1600px;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 0 20px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke: 1px rgb(255, 255, 255); /* Толщина и цвет контура */
+    text-shadow: 5px 5px black;
+    z-index: 1;
+    position: relative;
+}
+
+.about_text {
+    font-family: 'VT323', monospace;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 1000px;
+    font-size: 15px;
+    line-height: 1;
+    text-indent: 20px;
+    position: relative;
+    color: transparent;
+    text-rendering: optimizeLegibility;
+    -webkit-text-stroke: 0.6px rgba(255, 255, 255); /* Толщина и цвет контура */
+
+}
+
+@keyframes animateGradient {
+    0% {
+        -webkit-text-stroke-color: rgba(255, 0, 0, 1); /* Начальный цвет контура */
+    }
+    25% {
+        -webkit-text-stroke-color: rgba(255, 255, 0, 1); /* Промежуточный цвет контура */
+    }
+    50% {
+        -webkit-text-stroke-color: rgba(0, 255, 0, 1); /* Промежуточный цвет контура */
+    }
+    75% {
+        -webkit-text-stroke-color: rgb(0, 140, 255); /* Промежуточный цвет контура */
+    }
+    100% {
+        -webkit-text-stroke-color: rgb(255, 98, 255); /* Конечный цвет контура */
+    }
+}
+
+.roadmap {
+    font-family: 'VT323', monospace;
+    text-align: center;
+    margin: 20px auto;
+    padding: 0 10%px;
+    font-size: 15px;
+    line-height: 1;
+    text-indent: 20px;
+    position: relative;
+    color: rgba(255, 255, 255, 0); /* Делаем текст прозрачным */
+    -webkit-text-stroke: 2px rgba(255, 255, 255, 0.1); /* Толщина и цвет контура */
+    animation: animateGradient 5s infinite alternate; /* Анимация перехода цвета */
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.4), /* Белая тень */
+                 0 0 20px rgba(255, 255, 255, 0.3), /* Белая тень */
+                 0 0 30px rgba(255, 255, 255, 0.2), /* Белая тень */
+                 0 0 40px rgba(255, 255, 255, 0.1); /* Белая тень */
+}
+
+a:hover {
+    text-decoration: none;
+    color: #ffffff;
+    border-bottom: 0px solid rgb(255, 255, 255);
+    transition: 2s;
+}
+
+img {
+    text-align: center;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    justify-content: center;
+    display: flex;
+}
+
+.mainimg {
+    object-fit: cover;
+    width: 50%;
+    height: 50%;
+    max-width: 500px;
+    max-height: 600px;
+    position: relative;
+    z-index: 1;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+
+}
+
+.gifka {
+    z-index: 1;
+    position: relative;
+    text-align: center;
+    display: block;
+    margin: 5% auto;
+    margin-bottom: -30px;
+    margin-top: 50px;
+    width: 30%;
+}
+
+.gifka2 {
+    z-index: 1;
+    position: relative;
+    text-align: center;
+    display: block;
+    margin: 100px auto;
+    margin-bottom: 1px;
+    width: 30%;
+}
+
+.cat {
+    font-family: 'VT323', monospace;
+    text-align: center; /* Выравнивание текста по центру */
+    font-size: 20px; /* Размер текста */
+    line-height: 1; /* Межстрочный интервал */
+    position: relative;
+    color: rgb(0, 0, 0);
+    -webkit-text-stroke: 1.5px rgb(212, 250, 0); /* Толщина и цвет контура */
+    text-shadow: 5px 5px black;
+    z-index: 1;
+    transition: 2s;
+    animation: animateGradient 5s infinite alternate; /* Анимация перехода цвета */
+
+}
+
+header {
+    z-index: 1;
+    position: relative;
+    margin-bottom: 2%;
+}
+
+.maintoolbar {
+    height: 1em;
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    font-size: 2em;
+    transition: 2s;
+    margin-bottom: 100px;
+    color: rgba(255, 217, 0, 0);
+    -webkit-text-stroke: 1px rgb(255, 255, 255); /* Толщина и цвет контура */
+
+
+}
+
+.number1 {
+    height: 1em;
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    font-size: 2em;
+    transition: 2s;
+    margin-bottom: 100px;
+}
+
+.number1:hover {
+    text-shadow:5px 5px black,  0 0 150px #ffc400;
+}
+
+.maintoolbar:hover {
+    text-shadow:5px 5px black,  0 0 150px #fffb00;
+}
+
+
+
+
+
+
+
+
+.nav ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+.nav li {
+    font-size: 1.7em;
+    line-height: 40px;
+    height: 40px;
+
+}
+
+.nav a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0);
+    transition: 1s ;
+}
+
+.nav a:hover {
+    color: #ffffff;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7), /* Белая тень */
+                 0 0 20px rgba(255, 255, 255, 0.5), /* Белая тень */
+                 0 0 30px rgba(255, 255, 255, 0.3), /* Белая тень */
+                 0 0 40px rgba(255, 255, 255, 0.1); /* Белая тень */
+}
+
+
+.nav a.active {
+    color: #ffffff00;
+    cursor: default;
+    animation: animateGradient 5s infinite alternate; /* Анимация перехода цвета */
+    -webkit-text-stroke: 2px rgb(255, 255, 255); /* Толщина и цвет контура */
+    font-size: 40px;
+}
+
+/* === BUY INSTRUCTION STYLES === */
+
+.buy-instruction {
+    font-family: 'VT323', monospace;
+    max-width: 900px;
+    margin: 120px auto;
+    padding: 10px 60px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 2px solid #fff;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 20px;
+    line-height: 1;
+    z-index: 10;
+    position: relative;
+}
+
+
+
+.buy-instruction p,
+.buy-instruction li,
+.buy-instruction a {
+    color: white;
+    text-shadow: none;
+    -webkit-text-stroke: 0px transparent;
+}
+
+.buy-instruction a {
+    color: #00ffff;
+}
+
+.buy-instruction ol,
+.buy-instruction ul {
+    padding-left: 20px;
+}
+
+.step {
+    margin-bottom: 30px;
+}
+
+/* === Анимация только для h2 внутри .buy-instruction === */
+
+.buy-instruction h1 {
+    font-family: 'VT323', monospace;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 100px;
+    position: relative;
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+    animation: animateGradient 5s infinite alternate;
+    text-shadow: 5px 5px black;
+}
+
+.buy-instruction h2 {
+    font-family: 'VT323', monospace;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 36px;
+    position: relative;
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+    animation: animateGradient 5s infinite alternate;
+    text-shadow: 5px 5px black;
+}
+
+@media screen and (min-width: 600px) {
+    .nav li {
+width: 150px;
+border-bottom: none;
+    height: 65px;
+    line-height: 65px;
+    font-size: 2.4em;
+    }
+
+
+    .nav li {
+    float: left;
+    }
+    .nav ul {
+    overflow: auto;
+    width: 800px;
+    margin: 0 auto;
+    }
+
+    .maintoolbar {
+        font-size: 4em;
+    }
+
+    .cat {
+        font-family: 'VT323', monospace;
+        text-align: center; /* Выравнивание текста по центру */
+        font-size: 50px; /* Размер текста */
+        line-height: 1; /* Межстрочный интервал */
+        position: relative;
+        color: rgb(0, 0, 0);
+        -webkit-text-stroke: 1.5px rgb(212, 250, 0); /* Толщина и цвет контура */
+        text-shadow: 5px 5px black;
+        z-index: 1;
+        transition: 2s;
+        animation: animateGradient 5s infinite alternate; /* Анимация перехода цвета */
+
+    }
+
+    .roadmap {
+        font-family: 'VT323', monospace;
+        text-align: center;
+        margin: 20px auto;
+        padding: 0 20px;
+        font-size: 45px;
+        line-height: 1;
+        text-indent: 20px;
+        position: relative;
+        color: rgba(255, 255, 255, 0); /* Делаем текст прозрачным */
+        -webkit-text-stroke: 2px rgb(255, 255, 255); /* Толщина и цвет контура */
+        animation: animateGradient 5s infinite alternate; /* Анимация перехода цвета */
+        text-shadow: 5px 5px black;
+
+    }
+     .about_text {
+        padding: 0 20px;
+        font-size: 35px; /* Уменьшаем размер */
+    -webkit-text-stroke: 1livepx rgba(255, 255, 255, 0.8); /* Уменьшаем обводку */
+    }
+}
+
+
+@media (max-width: 768px) {
+  .socials-container {
+    gap: 10px;
+    padding: 20px 10px;
+  }
+
+  .contacticon {
+    font-size: 50px;
+  }
+}
